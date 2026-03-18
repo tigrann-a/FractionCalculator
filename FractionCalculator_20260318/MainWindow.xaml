@@ -8,9 +8,26 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0*"/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="97*"/>
+            <ColumnDefinition Width="3*"/>
         </Grid.ColumnDefinitions>
+        <TextBox Name="frNum1" HorizontalAlignment="Left" Margin="100,120,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" Height="30"/>
+        <TextBox Name="frDen1" HorizontalAlignment="Left" Margin="100,175,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="120" Height="30"/>
 
+        <TextBox Name="frNum2" HorizontalAlignment="Left" Margin="340,120,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" Height="30"/>
+        <TextBox Name="frDen2" HorizontalAlignment="Left" Margin="340,175,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="120" Height="30"/>
+
+        <ComboBox Name ="opr" HorizontalAlignment="Left" Margin="244,150,0,0" VerticalAlignment="Top" Width="66">
+            <ComboBoxItem IsSelected="True">+</ComboBoxItem>
+            <ComboBoxItem>-</ComboBoxItem>
+            <ComboBoxItem>*</ComboBoxItem>
+            <ComboBoxItem>/</ComboBoxItem>
+        </ComboBox>
+
+        <Label Content="=" HorizontalAlignment="Left" Margin="488,150,0,0" VerticalAlignment="Top"/>
+        <Label Name="ans" Content="ans" HorizontalAlignment="Left" Margin="531,150,0,0" VerticalAlignment="Top"/>
+
+        <Button Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="100,250,0,0" VerticalAlignment="Top" Height="30" Width="120" Click="btnClear_Click"/>
+        <Button Name="btnCalculate" Content="Calculate" HorizontalAlignment="Left" Margin="340,250,0,0" VerticalAlignment="Top" Height="30" Width="120" Click="btnCalculate_Click"/>
     </Grid>
 </Window>
