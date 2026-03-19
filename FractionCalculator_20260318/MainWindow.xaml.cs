@@ -8,6 +8,7 @@ namespace FractionCalculator_20260318;
 /// </summary>
 public partial class MainWindow : Window
 {
+    // կոնստրուկտոր, որը կանչվում է, երբ ստեղծվում է MainWindow օբյեկտ
     public MainWindow()
     {
         InitializeComponent();
